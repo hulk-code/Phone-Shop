@@ -1,15 +1,18 @@
 import Banner from "../Bannar/Banner";
 import BrandName from "../BrandName/BrandName";
 import Footer from "../SharedPage/Footer";
-import Navber from "../SharedPage/Navber";
+import MarqueeSlider from "./MarqueeSlider";
+
+
 
 
 const Home = () => {
     return (
         <div>
-            <Navber></Navber>
+            
             <Banner></Banner>
             <BrandName></BrandName>
+            <MarqueeSlider></MarqueeSlider>
             <Footer></Footer>
         </div>
     );

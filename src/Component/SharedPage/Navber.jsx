@@ -1,14 +1,26 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../FireBaseAuth/AuthProvider";
 
 
 const Navber = () => {
+  const {user , LogOut}=useContext(AuthContext)
   const navLink=<>
   <li><NavLink to='/'>Home</NavLink></li>
   <li><NavLink to='/Add'>Add_Product</NavLink></li>
   <li><NavLink to='/mycart'>My_Cart</NavLink></li>
-  
-
   </>
+  const hanadleLogOut= () => {
+
+      LogOut()
+      .then(result =>{
+        console.log(result);
+      })
+      .catch(error =>{
+        console.error(error);
+      })
+}
+
     return (
         <div>
           <div className="navbar bg-base-100 p-6 ">
@@ -29,7 +41,28 @@ const Navber = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">LogIn</a>
+    <div className="flex items-center lg:mr-2">
+    {
+      user?.displayName
+     }
+       {
+        user && <div className="avatar">
+        <div className="w-10 lg:mr-3 lg:ml-3 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+          <img  src={user?.photoURL} alt="" />
+        </div>
+      </div>
+       }
+    </div>
+    
+    {
+      user ? <button className="btn btn-ghost" onClick={hanadleLogOut} >Log Out</button> 
+      :
+      <Link to='/login'>
+     <button className="btn btn-ghost">Login</button>
+  </Link>
+    }
+
+    <Link to='/register'></Link>
   </div>
 </div>  
         </div>
