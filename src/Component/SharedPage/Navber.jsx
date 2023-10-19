@@ -33,7 +33,7 @@ const Navber = () => {
         {navLink}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <img className="w-[150px] h-[70px]" src="https://i.ibb.co/5cwznNM/logo1-removebg-preview.png" alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

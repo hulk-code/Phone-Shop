@@ -6,7 +6,9 @@ const BrandName = () => {
   console.log(datas)
     
   return (
-    <div className="grid grid-cols-3">
+    <div> 
+      <p className="font-bold text-5xl text-center mt-10"  >Select Your Brand</p>
+      <div className="grid grid-cols-3">
       {datas.map(data => (
         <Link key={data._id} to={`/product/${data._id}`}> {/* Use Link to create a clickable card */}
           <div className="card w-96 bg-base-100 shadow-xl">
@@ -21,6 +23,7 @@ const BrandName = () => {
           </div>
         </Link>
       ))}
+    </div>
     </div>
   );
 };
