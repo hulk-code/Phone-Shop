@@ -51,14 +51,19 @@ const Product = () => {
      {
         category.map(card => <div key={card.Name}>
           <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src=
+            <figure><img className="h-[200px]" src=
               {card.Image} /></figure>
             <div className="card-body">
+              <h1>{card.BrandName}</h1>
               <h2 className="card-title">
-                Shoes!
+               {card.Name}
                 <div className="badge badge-secondary">NEW</div>
               </h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <p>{card.Type}</p>
+              <div className="flex justify-between">
+              <h1>Price:{card.Price}</h1>
+              <h1>Rating:{card.Rating}</h1>
+              </div>
               <div className="card-actions justify-end">
                 <Link to={`/detailsproduct/${card.Details}`}><button className="btn btn-primary">details</button></Link>
                 <Link  key={card.BrandName}><button className="btn btn-primary">Update</button></Link>
