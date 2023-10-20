@@ -12,22 +12,6 @@ if(!produts){
   setMessage("Sorry We have no available items now");
 }
 
-  const handleUpdate = (productsData) =>{
-    fetch(`http://localhost:5000/mobilebrand/${productsData._id}` ,{
-      method:"PUT",
-      headers:{
-          'content-type':"application/json"
-      },
-      body:JSON.stringify(productsData)
-  })
-
-  .then(res =>res.json())
-  .then(data =>{
-      console.log(data)
-  })
-  }
-  
-
   return (
 
     <div className="">
@@ -83,13 +67,8 @@ if(!produts){
               </div>
               <div className="card-actions justify-end">
                 <Link to={`/detailsproduct/${card._id}`}><button className="btn btn-primary">details</button></Link>
-                {/* <Link  key={card._id} to={`/update/${card._id}`} {id=card._id} ><button className="btn btn-primary">Update</button></Link> */}
-               <Link to={`/update/${card._id}`}> <button onClick={()=>handleUpdate()} className="btn btn-primary">Update
-               {/* <Update 
-                key={card._id}
-                handleUpdate ={handleUpdate}
-                card={card}
-                ></Update> */}
+               <Link to={`/update/${card._id}`}> <button  className="btn btn-primary">Update
+               
                 </button></Link>
               </div>
             </div>

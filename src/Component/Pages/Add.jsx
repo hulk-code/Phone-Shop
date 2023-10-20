@@ -1,12 +1,5 @@
 
-// Image
-// Name
-// Brand Name
-// Type (If you choose the Technology and Electronics category ,then the types of products will be phone, computer, headphone, etc)
-// Price
-// Short description
-// Rating
-
+import Swal from "sweetalert2";
 import Footer from "../SharedPage/Footer";
 
 // Add button
@@ -37,6 +30,12 @@ const Add = () => {
         .then(res =>res.json())
         .then(data =>{
             console.log(data)
+            Swal.fire({
+                icon:'success',
+                title:'Card added successful'
+            });
+            form.reset();
+            
         })
     }
     return (

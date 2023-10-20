@@ -11,7 +11,7 @@ const BrandName = () => {
     console.log(data)
     setdatas(data)
   })
-  },[])
+  },[datas])
   
     
   return (

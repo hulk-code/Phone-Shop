@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       {
         path: "/detailsproduct/:productId",
         element: <PrivateRoute><DetailsProduct></DetailsProduct></PrivateRoute>,
-        // loader:({params}) => fetch(`http://localhost:5000/mobilebrand/${params.productId}`)        
+               
       },
       {
         path: "add",
@@ -56,9 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/update/:id",
-        element: <Update></Update>,
-       loader:({params}) => fetch(`http://localhost:5000/mobilebrand/${params.id}`)
-        
+        element: <PrivateRoute><Update></Update></PrivateRoute>,        
       },
       {
         path: "/login",
