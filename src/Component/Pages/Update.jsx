@@ -1,11 +1,10 @@
-import { useLoaderData } from "react-router-dom";
+
 import Footer from "../SharedPage/Footer";
 
 
 
-const Update = () => {
-    const updatedata=useLoaderData()
-    console.log(updatedata)
+const Update = (id) => {
+    
     const handleSubmite = e => {
         e.preventDefault()
         console.log(e)
@@ -21,8 +20,11 @@ const Update = () => {
         const category=form.category.value;
         const FormData = { Name, BrandName, Type, Image, Details, Price, Rating,category }
         console.log(FormData)
+        const handleUpdate = (FormData) =>{
+  
+        }
         fetch(`http://localhost:5000/mobilebrand/${id}` ,{
-            method:"PUT",
+            method:"PATCH",
             headers:{
                 'content-type':"application/json"
             },
@@ -38,14 +40,14 @@ const Update = () => {
         <div>
             <div className="w-1/2 mx-auto " >
         <form onSubmit={handleSubmite}>
-            <div className="flex gap-10 ">
+            <div className="lg:flex gap-10 ">
                 <div className="form-control md:w-1/2">
                     <label className="label">
                         <span className="label-text">Name</span>
                     </label>
                     <label className="input-group">
 
-                        <input type="text" name="name"  placeholder="Enter Name" className="input input-bordered w-full" />
+                        <input type="text" name="name"  placeholder="Enter Name"  className="input input-bordered w-full" />
                     </label>
                 </div>
                 <div className="form-control md:w-1/2">
@@ -58,7 +60,7 @@ const Update = () => {
                     </label>
                 </div>
             </div>
-            <div className="flex gap-10 ">
+            <div className="lg:flex gap-10 ">
                 <div className="form-control md:w-1/2">
                     <label className="label">
                         <span className="label-text">Product_type</span>
@@ -78,7 +80,7 @@ const Update = () => {
                     </label>
                 </div>
             </div>
-            <div className="flex gap-10 ">
+            <div className="lg:flex gap-10 ">
                 <div className="form-control md:w-1/2">
                     <label className="label">
                         <span className="label-text">Price</span>
@@ -100,7 +102,7 @@ const Update = () => {
             </div>
 
 
-           <div className="flex">
+           <div className="lg:flex">
            <div className="form-control">
                 <label className="label">
                     <span className="label-text">Category</span>

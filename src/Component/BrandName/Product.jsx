@@ -46,7 +46,7 @@ const Product = () => {
   </div>
 </div>
      </div >
-     <div className="w-3/4 mx-auto grid grid-cols-2">
+     <div className="w-3/4 mx-auto grid lg:grid-cols-2 grid-cols-1 ">
      {
         produts?.map(card => <div key={card.Name}>
           <div className="card w-96 bg-base-100 shadow-xl">

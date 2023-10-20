@@ -17,7 +17,7 @@ const BrandName = () => {
   return (
     <div> 
       <p className="font-bold text-5xl text-center mt-10"  >Select Your Brand</p>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-1 lg:grid-cols-3">
       {datas?.map(data => (
         <Link key={data._id} to={`/product/${data.category}`}> {/* Use Link to create a clickable card */}
           <div className="card w-96 bg-base-100 shadow-xl">
