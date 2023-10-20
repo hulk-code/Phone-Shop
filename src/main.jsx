@@ -23,12 +23,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () =>fetch('http://localhost:5000/brandName')
+       
       },
       {
         path: "/product/:id",
         element: <Product></Product>,
-        loader: () =>fetch('http://localhost:5000/brandName')
+        loader: ({params}) =>fetch(`http://localhost:5000/mobilebrand/${params.id}`)
        
 
         
@@ -46,9 +46,9 @@ const router = createBrowserRouter([
         
       },
       {
-        path: "update/:id",
+        path: "/update/:id",
         element: <Update></Update>,
-         loader:({params}) => fetch(`http://localhost:5000/brandName/${params.id}`)
+       
         
       },
       {

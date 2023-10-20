@@ -10,47 +10,43 @@
         
             "category": [
               {
-                "Image": "https://i.ibb.co/Z2250zW/iphone-14.png",
-                "Name": "Samsung Galaxy S22",
+                "Image": "https://i.ibb.co/Xb6jNxQ/phone5.jpg",
+                "Name": "IPhone_15",
                 "BrandName": "Samsung",
                 "Type": "Phone",
                 "Price": 799.99,
                 "Rating": 4.5,
-                "Details Button": "View Details",
-                "Update Button": "Update",
+                
                 "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
               },
               {
-                "Image": "https://i.ibb.co/9cNDNTg/Mac-Book-Air-15inch-5.webp",
-                "Name": "Samsung Galaxy Book Pro",
-                "BrandName": "Samsung",
+                "Image": "https://i.ibb.co/2Ss6PnW/Computer.webp",
+                "Name": "Apple mecBook Pro",
+                "BrandName": "Apple",
                 "Type": "Computer",
                 "Price": 1299.99,
                 "Rating": 4.7,
-                "Details Button": "View Details",
-                "Update Button": "Update",
+                
                 "Details": "The Samsung Galaxy Book Pro is a sleek and powerful laptop with a high-resolution display and long-lasting battery."
               },
               {
                 "Image": "https://i.ibb.co/nzY0ZQQ/appleaheadphon.jpg",
-                "Name": "Samsung AKG N700NC",
-                "BrandName": "Samsung",
+                "Name": "Ipod",
+                "BrandName": "Apple",
                 "Type": "Headphone",
                 "Price": 199.99,
                 "Rating": 4.3,
-                "Details Button": "View Details",
-                "Update Button": "Update",
+                
                 "Details": "The Samsung AKG N700NC headphones offer excellent sound quality and noise-cancellation for an immersive audio experience."
               },
               {
-                "Image": "https://i.ibb.co/41xS77Q/Apple-20-W-Type-C-Power-Adapter-with-Cable-UK-1.jpg",
-                "Name": "Samsung Galaxy Watch 4",
-                "BrandName": "Samsung",
+                "Image": "https://i.ibb.co/GczfFJN/watch1.jpg",
+                "Name": "Iphone Watch ",
+                "BrandName": "Apple",
                 "Type": "Smartwatch",
                 "Price": 249.99,
                 "Rating": 4.6,
-                "Details Button": "View Details",
-                "Update Button": "Update",
+                
                 "Details": "The Samsung Galaxy Watch 4 is a feature-packed smartwatch with health tracking and a stylish design for your active lifestyle."
               }
             ]
@@ -77,8 +73,7 @@
           "Type": "Phone",
           "Price": 799.99,
           "Rating": 4.5,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
           "Image": "https://i.ibb.co/8r2nyb4/best-samsung-laptops.jpg",
@@ -87,8 +82,7 @@
           "Type": "Computer",
           "Price": 1299.99,
           "Rating": 4.7,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
           "Image": "https://i.ibb.co/tHsKYTx/sumsmgtv.jpg",
@@ -96,19 +90,17 @@
           "BrandName": "Samsung",
           "Type": "Headphone",
           "Price": 199.99,
-          "Rating": 4.3,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Rating": 4.3, 
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
-          "Image": "https://i.ibb.co/ysRd1rp/samsung-akg-eo-ic100-in-ear-headphones-2.jpg",
+          "Image": "https://i.ibb.co/7vRJ02F/watch2.webp",
           "Name": "Samsung Galaxy Watch 4",
           "BrandName": "Samsung",
           "Type": "Smartwatch",
           "Price": 249.99,
           "Rating": 4.6,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         }
       
       
@@ -125,44 +117,42 @@
       "category":[
             
         {
-          "Image": "samsung-phone.jpg",
-          "Name": "Samsung Galaxy S22",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/y4D2t9P/phone4.png",
+          "Name": "Sony S22",
+          "BrandName": "Sony",
           "Type": "Phone",
           "Price": 799.99,
           "Rating": 4.5,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
+        
         },
         {
-          "Image": "samsung-computer.jpg",
-          "Name": "Samsung Galaxy Book Pro",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/sstfgwL/Computer2.webp",
+          "Name": "Sony TV",
+          "BrandName": "Sony",
           "Type": "Computer",
           "Price": 1299.99,
           "Rating": 4.7,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
+         
         },
         {
-          "Image": "samsung-headphones.jpg",
-          "Name": "Samsung AKG N700NC",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/zGnpxTr/headphone1.webp",
+          "Name": "Sony N700NC",
+          "BrandName": "Sony",
           "Type": "Headphone",
           "Price": 199.99,
           "Rating": 4.3,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
-          "Image": "samsung-smartwatch.jpg",
-          "Name": "Samsung Galaxy Watch 4",
-          "BrandName": "Samsung",
-          "Type": "Smartwatch",
+          "Image": "https://i.ibb.co/Q8vDz2p/watch3.jpg",
+          "Name": "Sony Camera",
+          "BrandName": "Sony",
+          "Type": "Watch",
           "Price": 249.99,
           "Rating": 4.6,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         }
       
       
@@ -179,44 +169,44 @@
       "category":[
             
         {
-          "Image": "samsung-phone.jpg",
-          "Name": "Samsung Galaxy S22",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/8YGT94X/phone3.webp",
+          "Name": "Boat S22",
+          "BrandName": "Boat",
           "Type": "Phone",
           "Price": 799.99,
           "Rating": 4.5,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
+        
         },
         {
-          "Image": "samsung-computer.jpg",
-          "Name": "Samsung Galaxy Book Pro",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/RYL0rBQ/Computer5.webp",
+          "Name": "Boat Pro",
+          "BrandName": "Boat",
           "Type": "Computer",
           "Price": 1299.99,
           "Rating": 4.7,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
+         
         },
         {
-          "Image": "samsung-headphones.jpg",
-          "Name": "Samsung AKG N700NC",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/St0mFpn/headphone5.jpg",
+          "Name": "Boat N700NC",
+          "BrandName": "Boat",
           "Type": "Headphone",
           "Price": 199.99,
           "Rating": 4.3,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
+          
         },
         {
-          "Image": "samsung-smartwatch.jpg",
-          "Name": "Samsung Galaxy Watch 4",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/B6wwTkD/watch4.jpg",
+          "Name": "Boat Watch 4",
+          "BrandName": "Boat",
           "Type": "Smartwatch",
           "Price": 249.99,
           "Rating": 4.6,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
+         
         }
       
       
@@ -233,44 +223,40 @@
       "category":[
             
         {
-          "Image": "samsung-phone.jpg",
-          "Name": "Samsung Galaxy S22",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/DYjy1Mc/phone2.jpg",
+          "Name": "Intel S22",
+          "BrandName": "Intel",
           "Type": "Phone",
           "Price": 799.99,
           "Rating": 4.5,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
-          "Image": "samsung-computer.jpg",
-          "Name": "Samsung Galaxy Book Pro",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/WkvKdYv/Computer4.jpg",
+          "Name": "Intel Book Pro",
+          "BrandName": "Intel",
           "Type": "Computer",
           "Price": 1299.99,
           "Rating": 4.7,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
-          "Image": "samsung-headphones.jpg",
-          "Name": "Samsung AKG N700NC",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/XSkyqGj/headphone3.jpg",
+          "Name": "Intel N700NC",
+          "BrandName": "Intel",
           "Type": "Headphone",
           "Price": 199.99,
           "Rating": 4.3,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
-          "Image": "samsung-smartwatch.jpg",
-          "Name": "Samsung Galaxy Watch 4",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/NjLVgVz/watch5.jpg",
+          "Name": "Intel Watch 4",
+          "BrandName": "Intel",
           "Type": "Smartwatch",
           "Price": 249.99,
           "Rating": 4.6,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         }
       
       
@@ -287,44 +273,40 @@
       "category":[
             
         {
-          "Image": "samsung-phone.jpg",
-          "Name": "Samsung Galaxy S22",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/25D9knD/phone6.webp",
+          "Name": "Walton S22",
+          "BrandName": "Walton",
           "Type": "Phone",
           "Price": 799.99,
           "Rating": 4.5,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
-          "Image": "samsung-computer.jpg",
-          "Name": "Samsung Galaxy Book Pro",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/303GLLq/Computer3.png",
+          "Name": "Walton Book Pro",
+          "BrandName": "Walton",
           "Type": "Computer",
           "Price": 1299.99,
           "Rating": 4.7,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
-          "Image": "samsung-headphones.jpg",
-          "Name": "Samsung AKG N700NC",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/St0mFpn/headphone5.jpg",
+          "Name": "Walton N700NC",
+          "BrandName": "Walton",
           "Type": "Headphone",
           "Price": 199.99,
           "Rating": 4.3,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         },
         {
-          "Image": "samsung-smartwatch.jpg",
-          "Name": "Samsung Galaxy Watch 4",
-          "BrandName": "Samsung",
+          "Image": "https://i.ibb.co/BN1K0Zs/watch6.jpg",
+          "Name": "Walton Watch 4",
+          "BrandName": "Walton",
           "Type": "Smartwatch",
           "Price": 249.99,
           "Rating": 4.6,
-          "Details Button": "View Details",
-          "Update Button": "Update"
+          "Details": "The Samsung Galaxy S22 is the latest flagship phone with a stunning display, powerful processor, and a top-notch camera system."
         }
       
       

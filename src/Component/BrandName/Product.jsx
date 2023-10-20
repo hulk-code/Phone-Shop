@@ -1,16 +1,14 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 
 const Product = () => {
+ 
   const produts = useLoaderData()
+  console.log(produts)
 
-  const { id } = useParams()
-  console.log(id, produts)
-  const produtId = produts.find(product => product._id == id)
-  console.log(produtId)
-  const { category } = produtId;
+ 
 
-  console.log(category)
+  
 
   return (
 
@@ -49,7 +47,7 @@ const Product = () => {
      </div >
      <div className="w-3/4 mx-auto grid grid-cols-2">
      {
-        category.map(card => <div key={card.Name}>
+        produts?.map(card => <div key={card.Name}>
           <div className="card w-96 bg-base-100 shadow-xl">
             <figure><img className="h-[200px]" src=
               {card.Image} /></figure>
@@ -66,7 +64,7 @@ const Product = () => {
               </div>
               <div className="card-actions justify-end">
                 <Link to={`/detailsproduct/${card.Details}`}><button className="btn btn-primary">details</button></Link>
-                <Link  key={card.BrandName}><button className="btn btn-primary">Update</button></Link>
+                <Link  key={card.BrandName} to={`/update/${card._id}`} ><button className="btn btn-primary">Update</button></Link>
                 
               </div>
             </div>

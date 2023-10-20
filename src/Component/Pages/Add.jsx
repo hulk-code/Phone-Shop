@@ -13,14 +13,15 @@ const Add = () => {
         console.log(e)
         const form = e.target;
         console.log(form)
-        const name = form.name.value;
-        const brandNAme = form.brandname.value;
-        const productTypes = form.Producttype.value;
-        const Photo = form.Photo.value;
-        const description = form.Description.value;
-        const price = form.price.value;
-        const rating = form.rating.value;
-        const FormData = { name, brandNAme, productTypes, Photo, description, price, rating }
+        const Name = form.name.value;
+        const BrandName = form.brandname.value;
+        const Type = form.Producttype.value;
+        const Image = form.Photo.value;
+        const  Details= form.Description.value;
+        const Price = form.price.value;
+        const Rating = form.rating.value;
+        const category=form.category.value;
+        const FormData = { Name, BrandName, Type, Image, Details, Price, Rating,category }
         console.log(FormData)
         fetch('http://localhost:5000/mobilebrand' ,{
             method:"POST",
@@ -98,7 +99,19 @@ const Add = () => {
                         </label>
                     </div>
                 </div>
-                <div className="form-control">
+
+
+               <div className="flex">
+               <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Category</span>
+                    </label>
+                    <label className="input-group">
+
+                        <input type="text" name="category" placeholder="category" className="input input-bordered" />
+                    </label>
+                </div>
+               <div className="form-control">
                     <label className="label">
                         <span className="label-text">Rating</span>
                     </label>
@@ -107,6 +120,7 @@ const Add = () => {
                         <input type="text" name="rating" placeholder="rating" className="input input-bordered" />
                     </label>
                 </div>
+               </div>
                 <input type="submit" className="bg-slate-900 text-white p-4 w-full" value="Add Product" />
             </form>
         </div>
