@@ -48,19 +48,19 @@ if(!produts){
 </div>
      </div >
      <h3>{message}</h3>
-     <div className="w-3/4 mx-auto grid lg:grid-cols-2 grid-cols-1 ">
+     <div className="w-3/4 mx-auto grid lg:grid-cols-2 grid-cols-1 gap-10">
      {
         produts[1]? produts.map(card => <div key={card.Name}>
           <div className="card w-96 bg-base-100 shadow-xl">
             <figure><img className="h-[200px]" src=
               {card.Image} /></figure>
             <div className="card-body">
-              <h1>{card.BrandName}</h1>
+              <h1 className="text-xl font-semibold">Brand Name: {card.BrandName}</h1>
               <h2 className="card-title">
-               {card.Name}
+               Name of the product: {card.Name}
                 <div className="badge badge-secondary">NEW</div>
               </h2>
-              <p>{card.Type}</p>
+              <p>Type: {card.Type}</p>
               <div className="flex justify-between">
               <h1>Price:{card.Price}</h1>
               <h1>Rating:{card.Rating}</h1>
