@@ -34,8 +34,11 @@ const Navber = () => {
         {navLink}
       </ul>
     </div>
+    <div>
     <img className="w-[150px] h-[70px]" src="https://i.ibb.co/5cwznNM/logo1-removebg-preview.png" alt="" />
+    <p className="text-xl font-serif font-semibold">Elec Tech. Ltd</p>
   </div>
+    </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
      {navLink}
@@ -57,10 +60,10 @@ const Navber = () => {
     <DarkMode></DarkMode>
 
     {
-      user ? <button className="btn btn-primary" onClick={hanadleLogOut} >Log Out</button> 
+      user ? <button className="btn bg-black text-white ms-3 hover:bg-slate-500" onClick={hanadleLogOut} >Log Out</button> 
       :
       <Link to='/login'>
-     <button className="btn btn-primary">Login</button>
+     <button className="btn bg-black text-white ms-3 hover:bg-slate-500">Login</button>
   </Link>
     }
 

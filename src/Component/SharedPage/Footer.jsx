@@ -5,7 +5,7 @@ const Footer = () => {
             <footer className="footer p-10 bg-base-200 text-base-content">
   <aside>
     <img className="w-[150px] h-[70px]" src="https://i.ibb.co/5cwznNM/logo1-removebg-preview.png" alt="" />
-   <h1 className="text-2xl font-serif font-semibold">Mobile Phone Shop</h1>
+   <h1 className="text-2xl font-serif font-semibold">Elec Tech. Ltd</h1>
   </aside> 
   <nav>
     <header className="footer-title">Services</header> 

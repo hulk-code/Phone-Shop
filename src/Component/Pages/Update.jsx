@@ -64,6 +64,7 @@ const Update = () => {
     }
     return (
         <div>
+            <h1 className="text-3xl font-serif font-semibold text-center my-5">Update Card</h1>
             <div className="w-1/2 mx-auto " >
         <form onSubmit={handleSubmite}>
             <div className="lg:flex gap-10 ">
@@ -128,27 +129,28 @@ const Update = () => {
             </div>
 
 
-           <div className="lg:flex">
-           <div className="form-control">
+           <div className="lg:flex gap-10 ">
+           <div className="form-control  md:w-1/2">
                 <label className="label">
                     <span className="label-text">Category</span>
                 </label>
                 <label className="input-group">
 
-                    <input defaultValue={updateCard.category} type="text" name="category" placeholder="category" className="input input-bordered" />
+                    <input defaultValue={updateCard.category} type="text" name="category" placeholder="category" className="input input-bordered w-full" />
                 </label>
             </div>
-           <div className="form-control">
+           <div className="form-control  md:w-1/2">
                 <label className="label">
                     <span className="label-text">Rating</span>
                 </label>
                 <label className="input-group">
 
-                    <input defaultValue={updateCard.Rating} type="text" name="rating" placeholder="rating" className="input input-bordered" />
+                    <input defaultValue={updateCard.Rating} type="text" name="rating" placeholder="rating" className="input input-bordered w-full" />
                 </label>
             </div>
            </div>
-            <input type="submit" className="bg-slate-900 text-white p-4 w-full" value="Update" />
+           <div className="text-center my-4"><input type="submit" className="bg-slate-900 text-white p-4 rounded hover:bg-slate-500" value="Update" /></div>
+            
         </form>
     </div>
     
