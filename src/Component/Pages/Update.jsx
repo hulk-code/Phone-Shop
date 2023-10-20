@@ -151,7 +151,7 @@ const Update = () => {
             <input type="submit" className="bg-slate-900 text-white p-4 w-full" value="Update" />
         </form>
     </div>
-    <Footer></Footer>
+    
         </div>
     );
 };

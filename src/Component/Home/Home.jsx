@@ -15,7 +15,7 @@ const Home = () => {
             <BrandName></BrandName>
             <MarqueeSlider></MarqueeSlider>
             <CustomerReview></CustomerReview>
-            <Footer></Footer>
+           
         </div>
     );
 };

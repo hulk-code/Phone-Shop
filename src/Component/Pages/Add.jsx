@@ -1,6 +1,6 @@
 
 import Swal from "sweetalert2";
-import Footer from "../SharedPage/Footer";
+
 
 // Add button
 const Add = () => {
@@ -39,7 +39,8 @@ const Add = () => {
         })
     }
     return (
-        <div>
+        <div className="mb-12">
+            <h1 className="text-3xl font-serif font-semibold text-center my-5">Add product from here</h1>
             <div className="w-1/2 mx-auto " >
             <form onSubmit={handleSubmite}>
                 <div className="lg:flex gap-10 ">
@@ -104,31 +105,31 @@ const Add = () => {
                 </div>
 
 
-               <div className="lg:flex">
-               <div className="form-control">
+               <div className="lg:flex gap-10 mb-4">
+               <div className="form-control md:w-1/2">
                     <label className="label">
                         <span className="label-text">Category</span>
                     </label>
                     <label className="input-group">
 
-                        <input type="text" name="category" placeholder="category" className="input input-bordered" />
+                        <input type="text" name="category" placeholder="category" className="input input-bordered w-full" />
                     </label>
                 </div>
-               <div className="form-control">
+               <div className="form-control md:w-1/2">
                     <label className="label">
                         <span className="label-text">Rating</span>
                     </label>
                     <label className="input-group">
 
-                        <input type="text" name="rating" placeholder="rating" className="input input-bordered" />
+                        <input type="text" name="rating" placeholder="rating" className="input input-bordered w-full" />
                     </label>
                 </div>
-               </div>
-                <input type="submit" className="bg-slate-900 text-white p-4 w-full" value="Add Product" />
+               </div >
+                <div className="text-center"><input type="submit" className="bg-slate-900 text-white p-4 rounded hover:bg-slate-500" value="Add Product" /></div>
             </form>
            
         </div>
-        <Footer></Footer>
+       
         </div>
     );
 };

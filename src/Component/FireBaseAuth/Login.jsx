@@ -1,9 +1,6 @@
 import { useContext, useState } from "react";
-
-
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-
 import { BiLogoGoogle } from "react-icons/bi";
 import Swal from "sweetalert2";
 import 'aos/dist/aos.css'; 
@@ -98,8 +95,8 @@ const Login = () => {
         </div>
       </form>
         
-        <button onClick={handleGoogleLogin} className="btn "><BiLogoGoogle className="text-2xl"></BiLogoGoogle></button>
-        <p className=" m-auto font-medium p-3">New Here? PLZ<Link to='/register' className="text-red-700">Register</Link></p>
+        <button onClick={handleGoogleLogin} className="btn bg-blue-500"><BiLogoGoogle className="text-2xl text-white"></BiLogoGoogle></button>
+        <p className=" m-auto font-medium p-3"><Link to='/register' className="text-blue-700 underline">Have'nt you any id? Register</Link></p>
     </div>
       <p className='text-red-500'> {error}</p>
       <div>

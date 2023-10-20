@@ -14,7 +14,7 @@ if(!produts){
 
   return (
 
-    <div className="">
+    <div className="mb-10">
      <div>
      <div className="carousel w-full h-[450px] lg:mb-16">
   <div id="slide1" className="carousel-item relative w-full">
@@ -77,8 +77,6 @@ if(!produts){
       }
 
      </div>
-      
-      <Footer></Footer>
     </div>
   );
 };

@@ -57,10 +57,10 @@ const Navber = () => {
     <DarkMode></DarkMode>
 
     {
-      user ? <button className="btn btn-ghost" onClick={hanadleLogOut} >Log Out</button> 
+      user ? <button className="btn btn-primary" onClick={hanadleLogOut} >Log Out</button> 
       :
       <Link to='/login'>
-     <button className="btn btn-ghost">Login</button>
+     <button className="btn btn-primary">Login</button>
   </Link>
     }
 

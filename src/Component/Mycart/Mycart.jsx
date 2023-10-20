@@ -50,13 +50,13 @@ const Mycart = () => {
           
         }
     return (
-        <div>
+        <div className="mb-10">
          <div className="grid grid-cols-1 lg:grid-cols-3">
       {addCarts?.map(data => (
         <Link key={data._id}> {/* Use Link to create a clickable card */}
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-96 bg-base-200 shadow-xl">
             <figure className="px-10 pt-10">
-              <img src={data.Image} alt="Shoes" className="rounded-xl" />
+              <img src={data.Image} alt="Shoes" className="rounded-xl w-[350px] h-[200px]" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">{data.Name}</h2>
