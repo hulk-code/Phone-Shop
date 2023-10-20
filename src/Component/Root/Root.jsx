@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import Navber from "../SharedPage/Navber";
-import DarkMode from "../DarkMode/DarkMode";
 
 
 

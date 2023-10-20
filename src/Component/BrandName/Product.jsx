@@ -1,19 +1,24 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Footer from "../SharedPage/Footer";
+import { useState } from "react";
 
 
 const Product = () => {
  
   const produts = useLoaderData()
   console.log(produts)
+const [message, setMessage]= useState('')
+if(!produts){
+  setMessage("Sorry We have no available items now");
+}
 
-  const handleUpdate = (produts) =>{
-    fetch(`http://localhost:5000/mobilebrand/${products._id}` ,{
+  const handleUpdate = (productsData) =>{
+    fetch(`http://localhost:5000/mobilebrand/${productsData._id}` ,{
       method:"PUT",
       headers:{
           'content-type':"application/json"
       },
-      body:JSON.stringify(produts)
+      body:JSON.stringify(productsData)
   })
 
   .then(res =>res.json())
@@ -58,9 +63,10 @@ const Product = () => {
   </div>
 </div>
      </div >
+     <h3>{message}</h3>
      <div className="w-3/4 mx-auto grid lg:grid-cols-2 grid-cols-1 ">
      {
-        produts?.map(card => <div key={card.Name}>
+        produts[1]? produts.map(card => <div key={card.Name}>
           <div className="card w-96 bg-base-100 shadow-xl">
             <figure><img className="h-[200px]" src=
               {card.Image} /></figure>
@@ -88,7 +94,7 @@ const Product = () => {
               </div>
             </div>
           </div>
-        </div>)
+        </div>) : <> <h1  className="text-3xl font-bold text-center">Sorry We have no available items now</h1></> 
       }
 
      </div>
