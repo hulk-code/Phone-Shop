@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../FireBaseAuth/AuthProvider";
+import DarkMode from "../DarkMode/DarkMode";
 
 
 const Navber = () => {
@@ -53,7 +54,8 @@ const Navber = () => {
       </div>
        }
     </div>
-    
+    <DarkMode></DarkMode>
+
     {
       user ? <button className="btn btn-ghost" onClick={hanadleLogOut} >Log Out</button> 
       :

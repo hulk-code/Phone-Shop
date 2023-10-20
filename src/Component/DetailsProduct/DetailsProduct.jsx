@@ -45,20 +45,21 @@ const handleAddToCart = (data) =>{
 
     return (
         <div className="">
-            <h1 className="h-2 text-3xl text-center"> Product Name:{product.BrandNAme
-            } </h1>
-            <div>
-                <div className=" mx-auto">
-                    <img src={product.Image} alt={product.Name} />
-                </div>
-                <p>{product.BrandNAme}</p>
-                <p>{product.Type}</p>
-                <p>Price: {product.Price}</p>
-                <p>Rating: {product.Rating}</p>
-                <p>Details: {product.Details}</p>
-            <button onClick={()=>handleAddToCart(product)} className="btn btn-primary">Add to Cart</button>
-                {/* Add other product details here */}
-            </div>
+            
+           
+            <div className="hero min-h-screen bg-base-200">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <img src={product.Image} className="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 className="text-3xl font-bold">Product Name:{product.Name}</h1>
+      <p className="py-6">Price: {product.Price}</p>
+      <p className="py-6">Rating: {product.Rating}</p>
+      <p className="py-6">Details: {product.Details}</p>
+      
+      <button onClick={()=>handleAddToCart(product)} className="btn btn-primary">Add to Cart</button>
+    </div>
+  </div>
+</div>
         </div>
     );
 };
