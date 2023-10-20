@@ -15,6 +15,8 @@ import Update from './Component/Pages/Update';
 import Login from './Component/FireBaseAuth/Login';
 import Register from './Component/FireBaseAuth/Register';
 import AuthProvider from './Component/FireBaseAuth/AuthProvider';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import Mycart from './Component/Mycart/Mycart';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,19 +37,25 @@ const router = createBrowserRouter([
       },
       {
         path: "/detailsproduct/:details",
-        element: <DetailsProduct></DetailsProduct>,
+        element: <PrivateRoute><DetailsProduct></DetailsProduct></PrivateRoute>,
         loader: () =>fetch('http://localhost:5000/brandName')
         
       },
       {
         path: "add",
-        element: <Add></Add>,
+        element: <PrivateRoute><Add></Add></PrivateRoute>,
+     
+        
+      },
+      {
+        path: "/mycart",
+        element: <PrivateRoute><Mycart></Mycart></PrivateRoute>,
      
         
       },
       {
         path: "/update/:id",
-        element: <Update></Update>,
+        element: <PrivateRoute><Update></Update></PrivateRoute>,
        
         
       },

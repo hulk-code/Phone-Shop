@@ -1,4 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
+import Footer from "../SharedPage/Footer";
 
 
 const Product = () => {
@@ -74,7 +75,7 @@ const Product = () => {
 
      </div>
       
-      
+      <Footer></Footer>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import Footer from "../SharedPage/Footer";
 
 
 const DetailsProduct = () => {
@@ -7,6 +8,7 @@ const DetailsProduct = () => {
     return (
         <div>
             <p>{details}</p>
+            <Footer></Footer>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import Footer from "../SharedPage/Footer";
 
 
 
@@ -34,7 +35,8 @@ const Update = () => {
         })
     }
     return (
-        <div className="w-1/2 mx-auto " >
+        <div>
+            <div className="w-1/2 mx-auto " >
         <form onSubmit={handleSubmite}>
             <div className="flex gap-10 ">
                 <div className="form-control md:w-1/2">
@@ -121,6 +123,8 @@ const Update = () => {
             <input type="submit" className="bg-slate-900 text-white p-4 w-full" value="Update" />
         </form>
     </div>
+    <Footer></Footer>
+        </div>
     );
 };
 
