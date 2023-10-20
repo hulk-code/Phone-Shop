@@ -17,10 +17,12 @@ import Register from './Component/FireBaseAuth/Register';
 import AuthProvider from './Component/FireBaseAuth/AuthProvider';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Mycart from './Component/Mycart/Mycart';
+import ErrorPage from './Component/ErrorPage/ErrorPage';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
