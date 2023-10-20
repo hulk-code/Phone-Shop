@@ -11,7 +11,7 @@ import Home from './Component/Home/Home';
 import Product from './Component/BrandName/product';
 import DetailsProduct from './Component/DetailsProduct/DetailsProduct';
 import Add from './Component/Pages/Add';
-// import Update from './Component/Pages/Update';
+import Update from './Component/Pages/Update';
 import Login from './Component/FireBaseAuth/Login';
 import Register from './Component/FireBaseAuth/Register';
 import AuthProvider from './Component/FireBaseAuth/AuthProvider';
@@ -38,10 +38,9 @@ const router = createBrowserRouter([
         
       },
       {
-        path: "/detailsproduct/:details",
+        path: "/detailsproduct/:productId",
         element: <PrivateRoute><DetailsProduct></DetailsProduct></PrivateRoute>,
-        loader: () =>fetch('http://localhost:5000/brandName')
-        
+        // loader:({params}) => fetch(`http://localhost:5000/mobilebrand/${params.productId}`)        
       },
       {
         path: "add",
@@ -55,12 +54,12 @@ const router = createBrowserRouter([
      
         
       },
-      // {
-      //   path: "/update/:id",
-      //   element: <Update></Update>,
-      // //  loader:({params}) => fetch(`http://localhost:5000/mobilebrand/${params.id}`)
+      {
+        path: "/update/:id",
+        element: <Update></Update>,
+       loader:({params}) => fetch(`http://localhost:5000/mobilebrand/${params.id}`)
         
-      // },
+      },
       {
         path: "/login",
         element: <Login></Login>,
