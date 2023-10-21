@@ -1,12 +1,17 @@
+import { useContext } from "react";
 import  { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../FireBaseAuth/AuthProvider";
 
 const DetailsProduct = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState(null);
     const [control, setControl]= useState(false);
-
+    const {user} =useContext(AuthContext)
+    const email = user.email;
+    const allData = {...product, email}
+    console.log(allData);
     useEffect(() => {
         // Fetch product details based on the productId
         fetch(`http://localhost:5000/mobileDetails/${productId}`)
@@ -24,6 +29,7 @@ const DetailsProduct = () => {
 
 const handleAddToCart = (data) =>{
     console.log(data);
+    // const allData = {...data, user.email}
     fetch('http://localhost:5000/addToCart',{
         method: "POST",
         headers: {
@@ -56,7 +62,7 @@ const handleAddToCart = (data) =>{
       <p className="py-6">Rating: {product.Rating}</p>
       <p className="py-6">Details: {product.Details}</p>
       
-      <button onClick={()=>handleAddToCart(product)} className="btn btn-primary">Add to Cart</button>
+      <button onClick={()=>handleAddToCart(allData)} className="btn btn-primary">Add to Cart</button>
     </div>
   </div>
 </div>

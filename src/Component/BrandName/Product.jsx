@@ -1,5 +1,4 @@
 import { Link, useLoaderData } from "react-router-dom";
-import Footer from "../SharedPage/Footer";
 import { useState } from "react";
 
 

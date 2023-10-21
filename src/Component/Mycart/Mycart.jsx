@@ -1,19 +1,21 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-
+import { AuthContext } from "../FireBaseAuth/AuthProvider";
 
 const Mycart = () => {
     const [addCarts , setAddCarts]=useState([])
     const [control, setControl]= useState(false);
+    const {user} = useContext(AuthContext);
+    console.log(user.email);
     useEffect(() =>{
-    fetch('http://localhost:5000/addToCart')
+    fetch(`http://localhost:5000/addToCart?email=${user?.email}`)
     .then(res =>res.json())
     .then(data =>{
       console.log(data)
       setAddCarts(data)
     })
-    },[])
+    },[user.email])
 
     const handleDelete = (id)=>{
        
@@ -60,9 +62,9 @@ const Mycart = () => {
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">{data.Name}</h2>
-              <h2 className="card-title">{data.BrandNAme}</h2>
+              <h2 className="card-title">{data.BrandName}</h2>
               <h2 className="card-title">{data.Price}</h2>
-              <h2 className="card-title">{data.Types}</h2>
+              <h2 className="card-title">{data.Type}</h2>
              
               <button onClick={()=>handleDelete(data._id)} className="btn btn-primary">Remove</button>
             </div>
