@@ -14,7 +14,7 @@ const DetailsProduct = () => {
     console.log(allData);
     useEffect(() => {
         // Fetch product details based on the productId
-        fetch(`http://localhost:5000/mobileDetails/${productId}`)
+        fetch(`https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/mobileDetails/${productId}`)
             .then((response) => response.json())
             .then((data) => {
                 setProduct(data);
@@ -30,7 +30,7 @@ const DetailsProduct = () => {
 const handleAddToCart = (data) =>{
     console.log(data);
     // const allData = {...data, user.email}
-    fetch('http://localhost:5000/addToCart',{
+    fetch('https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/addToCart',{
         method: "POST",
         headers: {
             "content-type": "application/json"

@@ -12,7 +12,7 @@ const Update = () => {
     const [control, setControl] = useState(false)
     useEffect(() => {
         
-        fetch(`http://localhost:5000/mobileDetails/${id}`)
+        fetch(`https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/mobileDetails/${id}`)
             .then((response) => response.json())
             .then((data) => {
                 setUpdateCard(data);
@@ -37,7 +37,7 @@ const Update = () => {
         const FormData = { Name, BrandName, Type, Image, Details, Price, Rating,category }
         console.log(FormData)
         
-            fetch(`http://localhost:5000/mobilebrand/${updateCard._id}` ,{
+            fetch(`https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/mobilebrand/${updateCard._id}` ,{
               method:"PUT",
               headers:{
                   'content-type':"application/json"

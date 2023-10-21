@@ -7,13 +7,13 @@ import AOS from 'aos';
 const BrandName = () => {
   const [datas , setdatas]=useState([])
   useEffect(() =>{
-  fetch('http://localhost:5000/brandName')
+  fetch('https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/brandName')
   .then(res =>res.json())
   .then(data =>{
     console.log(data)
     setdatas(data)
   })
-  },[datas])
+  },[])
   
   useEffect(() => {
     AOS.init({

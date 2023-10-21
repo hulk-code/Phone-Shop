@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <Product></Product>,
-        loader: ({params}) =>fetch(`http://localhost:5000/mobilebrand/${params.id}`)
+        loader: ({params}) =>fetch(`https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/mobilebrand/${params.id}`)
        
 
         

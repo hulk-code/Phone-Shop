@@ -51,9 +51,9 @@ const Register = () => {
         console.log(result.user);
         
         
-        updateUserProfile(displayName ,photoURL)
+        updateUserProfile(displayName,photoURL)
         .then( () =>{
-          console.log('profilee updte')
+          console.log('profilee updte',displayName)
           nevigate(location ?.state ?location.state : '/')
         }
         

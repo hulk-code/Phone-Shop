@@ -19,7 +19,7 @@ const Add = () => {
         const category=form.category.value;
         const FormData = { Name, BrandName, Type, Image, Details, Price, Rating,category }
         console.log(FormData)
-        fetch('http://localhost:5000/mobilebrand' ,{
+        fetch('https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/mobilebrand' ,{
             method:"POST",
             headers:{
                 'content-type':"application/json"

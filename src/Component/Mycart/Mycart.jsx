@@ -9,7 +9,7 @@ const Mycart = () => {
     const {user} = useContext(AuthContext);
     console.log(user.email);
     useEffect(() =>{
-    fetch(`http://localhost:5000/addToCart?email=${user?.email}`)
+    fetch(`https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/addToCart?email=${user?.email}`)
     .then(res =>res.json())
     .then(data =>{
       console.log(data)
@@ -29,7 +29,7 @@ const Mycart = () => {
               confirmButtonText: 'Yes, delete it!'
             }).then((result) => {
               if (result.isConfirmed) {
-                fetch(`http://localhost:5000/addToCart/${id}`,{
+                fetch(`https://phone-shop-server-9jkzunhkt-sumiyaakhi.vercel.app/addToCart/${id}`,{
                   method: "DELETE",
                 })
                 .then(res => res.json())
